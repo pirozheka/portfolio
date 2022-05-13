@@ -1,0 +1,18 @@
+.promo {
+    min-height: 100vh;
+    position: relative;
+    background-color: #383838;
+    padding-top: 205px;
+    &__title {
+        width: 535px;
+        margin-top: 10px;
+    }
+    &__buttons {
+        margin-top: 25px;
+        display: flex;
+        
+    }
+}
+
+
+
