@@ -1,0 +1,129 @@
+.hamburger {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    height: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    cursor: pointer;
+
+    span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: #F2F2F2;
+    }
+
+    span.long {
+        width: 36px;
+    }
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.6s;
+
+    &.active {
+        left: 0;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &__block {
+        position: relative;
+        width: 345px;
+        transition: all 0.6s;
+        padding-top: 140px;
+        padding-left: 40px;
+        background-color: $main-color;
+        height: 100%;
+        z-index: 10;
+    }
+
+    &__close {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+        &:hover {
+            svg path {
+                fill: $button-color;
+            }
+        }
+    }
+
+    &__list {
+        list-style-type: none;
+        padding-left: 35px;
+    }
+
+    &__link {
+        font-weight: 700;
+        position: relative;
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 15px;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: -35px;
+            top: 12px;
+            width: 15px;
+            height: 15px;
+            border: 1px solid #383838;
+            border-radius: 100%;
+            transition: all 0.5s;
+        }
+
+        &:hover {
+            &:before {
+                background: #383838;
+            }
+        }
+
+        a {
+            color: #383838;
+            text-decoration: none;
+
+            &:hover {
+                color: $button-color;
+            }
+        }
+    }
+
+    &__social {
+        width: 90px;
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a:hover {
+            svg path {
+                fill: $button-color;
+            }
+        }
+    }
+
+    &__overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #f2f2f2;
+        opacity: .75;
+    }
+}

@@ -7,10 +7,26 @@
         width: 535px;
         margin-top: 10px;
     }
+    &__subtitle {
+        position: relative;
+        padding-left: 10px;
+        z-index: 2;
+        @include before_circle;
+    }
     &__buttons {
         margin-top: 25px;
         display: flex;
-        
+        width: 220px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__link {
+        color: #CDBE78;
+        font-weight: 700;
+        &:hover {
+            color: white;
+            text-decoration: none;
+        }
     }
 }
 
