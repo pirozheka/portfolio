@@ -1,29 +1,18 @@
 .resume {
     padding-top: 120px;
-    
-    &__title {
-        position: relative;
-        text-align: center;
-        @include before_circle;
-        &:before {
-            top: -5px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-    }
-    &__subtitle {
-        text-align: center;
-    }
+
     &__wrapper {
         display: grid;
         padding: 60px 65px 0 65px;
         grid-template-columns: repeat(2, 425px);
         column-gap: 135px;
     }
+
     &__column {
         &-title {
             position: relative;
             padding-left: 35px;
+
             &:before {
                 content: '';
                 position: absolute;
@@ -36,10 +25,13 @@
                 border-radius: 100%;
             }
         }
+
         ul {
             list-style-type: none;
+
             li {
                 position: relative;
+
                 &::after {
                     content: "";
                     width: 1px;
@@ -52,8 +44,10 @@
             }
         }
     }
+
     &__item {
         position: relative;
+
         &::before {
             content: '';
             height: 1px;
@@ -63,23 +57,28 @@
             top: 58px;
             left: 7px;
         }
+
         &-head {
             padding: 35px 0 0 100px;
             position: relative;
+
             h4 {
                 margin-bottom: 0;
             }
         }
+
         &-body {
             padding-left: 43px;
             margin-top: 12px;
             font-size: 12px;
         }
+
         &-icon {
             position: absolute;
             top: 40px;
             left: 45px;
             @include before_circle;
+
             img {
                 position: absolute;
                 left: 17px;
@@ -87,6 +86,7 @@
             }
 
         }
+
         &-location {
             font-size: 12px;
             line-height: 18px;

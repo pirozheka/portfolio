@@ -15,3 +15,10 @@ const hamburger = document.querySelector('.hamburger'),
         menu.classList.remove('active');
     });
 
+//скрипт автоматического пересчета процентов
+const counters = document.querySelectorAll('.skills__percentage'),
+        lines = document.querySelectorAll('.skills__scale-top');
+
+counters.forEach((item, i) => {
+    lines[i].style.width = item.innerHTML;
+});

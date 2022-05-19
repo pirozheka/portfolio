@@ -3,11 +3,13 @@
 
 @import 'base/variables';
 @import 'base/mixins';
+
 * {
     font-family: 'IBM Plex Serif', serif;
     margin: 0;
     padding: 0;
 }
+
 .container {
     position: relative;
     max-width: 1140px;
@@ -20,4 +22,5 @@
 @import 'blocks/sidepanel';
 @import 'blocks/menu';
 @import 'blocks/about-me';
-@import 'blocks/_resume'
+@import 'blocks/resume';
+@import 'blocks/stack';
