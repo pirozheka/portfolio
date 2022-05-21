@@ -6,7 +6,10 @@
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 2fr;
-    column-gap: 70px;
+    column-gap: 20px;
+    img {
+        margin-left: 20px;
+    }
     &__items {
         display: grid;
         grid-template: repeat(2, 1fr) / repeat(2, 260px);
@@ -20,7 +23,7 @@
         column-gap: 20px;
         &_circle {
             position: relative;
-            padding: 15px 0 0 15px;
+            padding: 15px 0 0 0px;
             @include before_circle;
             &:before {
                 top: 0;

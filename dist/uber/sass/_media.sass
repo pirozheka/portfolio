@@ -1,0 +1,127 @@
+@media (max-width: 1200px)
+    .menu
+        &_item
+            padding-right: 20px
+        &_link 
+            font-size: 13px
+    .promo
+        &_header
+            font-size: 50px
+    .reasons
+        &_block
+            align-items: flex-start
+        &_descr
+            width: 300px
+    .mobile
+        &_item
+            width: 300px
+    .footer
+        &_wrapper
+            padding-top: 28px
+        &_links
+            width: 300px
+            &_main a
+                font-size: 13px
+            &_sub a
+                font-size: 10px
+            &_lang
+                font-size: 10px
+        &_mobile
+            img
+                width: 75px
+                
+@media (max-width: 991px)
+    .title
+        font-size: 28px
+    .subtitle
+        font-size: 15px
+    .menu
+        &_item
+            padding-right: 8px
+        &_link 
+            font-size: 10px
+    .subheader
+        &_logo
+            img
+                width: 100%
+        &_official
+            font-size: 11px
+        &_phone
+            font-size: 18px
+        &_btn
+            margin-top: 21px
+            height: 40px
+            width: 100%
+    .promo
+        &_header
+            font-size: 40px
+        &_subheader
+            font-size: 30px
+    .reasons
+        &_block
+            flex-direction: column
+            align-items: center
+        &_descr
+            width: 300px
+            margin-top: 20px
+    .mobile
+        &_item
+            width: 220px
+            height: 230px
+            &_subtitle
+                font-size: 16px
+    .choice
+        min-height: 800px
+        &_img
+            width: 600px
+            height: 350px
+
+
+
+@media (max-width: 767px)
+    .menu
+        position: fixed
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        background-color: rgba(0,0,0, .8)
+        transition: 0.6s all
+        &_active
+            left: 0
+        &_item
+            padding-right: 0
+            border: none
+            margin-top: 10px
+        &_link
+            font-size: 20px
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 26px
+        height: 12px
+        span
+            display: block
+            background-color: #ffffff
+            height: 2px
+            margin-bottom: 2px
+            width: 100%
+            transition: 0.5s all
+        &_active
+            span
+                margin-bottom: -2px 
+                &:first-child
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                  transform: translateY(3px) rotate(45deg)  
+                    
+
