@@ -463,7 +463,7 @@
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__photo">
-                    <img src="img/Photo.png" alt="">
+                    <img src="img/progs3.jpg" alt="">
                 </div>
                 <div class="contacts__descr">
                     <h2 class="title title_fz16 promo__subtitle">Contacts</h2>
@@ -483,21 +483,24 @@
                     </div>
                     <form action="#" class="contacts__form">
                          <div class="contacts__input">
-                             <input type="text" id="name" name="name">
+                             <input required type="text" id="name" name="name">
                              <label for="name">Name</label>
                          </div>   
                          <div class="contacts__input">
-                            <input type="text" id="email" name="email">
+                            <input required type="text" id="email" name="email">
                             <label for="email">E-mail</label>
                         </div>  
                         <div class="contacts__textarea">
                             <textarea name="text" id="text"></textarea>
                             <label for="text">Message</label>
                         </div>
-                        <div>
+                        <div class="contacts__triggers">
                             <button class="contacts__btn btn">Submit</button>
-                        </div>
-                        
+                            <div class="contacts__policy">
+                                <input required type="checkbox" name="" id="">
+                                <span>I have read and accept the <a href="/policy.html">Privacy Statement</a></span>
+                            </div>
+                        </div> 
                     </form>
                 </div>
             </div>
