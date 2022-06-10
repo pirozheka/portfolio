@@ -46,6 +46,26 @@
         padding-top: 60px;
     }
 
+    .portfolio {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 280px);
+            grid-template-rows: unset;
+            grid-auto-rows: 280px;
+            justify-content: space-around;
+            row-gap: 40px;
+        
+        }
+        &__item {
+            &-vertical, &-horizontal {
+                grid-column: unset;
+                grid-row: unset;
+            }
+            img {
+                filter: none;
+            }
+         }
+    }
+
 }
 
 @media (max-width: 992px) {
@@ -160,6 +180,13 @@
             grid-template-columns: unset;
             margin: 0px 40px;
         }
+    }
+
+    .portfolio {
+        padding-top: 45px;
+        &__wrapper {
+            row-gap: 20px;
+        } 
     }
 }
 
